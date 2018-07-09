@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--朱国杰建的表[zhu]SQL语句 -->
+<mapper namespace="Zhu">
+	<select id="listZhusPage" parameterType="Dto" resultType="Dto">
+		SELECT
+		<include refid="dao.ZhuDao.column" />
+		FROM zhu
+		<where>
+ 		</where>
+	</select>
+</mapper>
